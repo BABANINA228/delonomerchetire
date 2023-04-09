@@ -1,0 +1,146 @@
+<html lang="ru">
+
+	<head> 
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<title> Sell CS </title> 
+		<link rel="stylesheet" href="css/style.css">
+        <link rel="icon" href="images/Mooden'.ico" type="image/x-icon">
+	</head>
+
+
+<body class="body">
+<header class="header">
+
+	<nav class="header_section">
+		<button class="header_button" id="header_logo">
+			<img class="logo_img" src="scrs/Logo.png"></img>
+			Sell CS
+		</button>
+
+		<button class="header_button" id="header_sell">
+			<a class="header_link header_link__active"   href="">Продать</a>
+		</button>
+
+		<button class="header_button"id="header_buy">
+			<a class="header_link" href="">Купить</a>
+		</button>
+	</nav>
+	
+	<nav class="header_section">
+		<button class="header_button" id="bucket">
+			<img src="scrs/bucket.svg" alt="">
+		</button>
+
+		<button class="header_button" id="person">	
+			<span id="person_text">
+				<p>Ебу шумеров</p>
+			</span>
+			<img id="avatar" src="scrs/Screenshot_5.png">
+			<span id="down-arrow">
+				<img style="height: 100%;width: 100%;" src="scrs/down_arrow.svg" alt="">
+			</span>
+			
+		</button>
+	</nav>
+</header>
+
+
+<main class="main">
+	<aside class="aside">
+		<div class="aside_title">
+			Фильтры:
+		</div>
+		<div class="filter_container">
+			<div class="filter_list">
+				<div>
+				<button class='filter_item' onclick='sidebarShow(this)'> 
+					<h2 class="filter_title">Оружие</h2>
+				</button>
+				
+					<ul class="weapons">
+
+						<li class="weapons_container open">
+							<h3 class='weapons_title' onclick="sidebarOpen(this)"> 
+								<img class="weapons_ikon" src='../scrs/weapon_ikons/AWP.svg'> 
+								Снайперские винтовки
+								
+							</h3>
+								<p class="weapons_item open"> AWP</p>
+								<p class="weapons_item open"> SSG 08</p>
+								<p class="weapons_item open"> SCAR-20</p>
+								<p class="weapons_item open">  G3SG1</p>
+						</li>
+
+						<li class="weapons_container" >
+							<h3 class='weapons_title' onclick="sidebarOpen(this)"> 
+								<img class="weapons_ikon" src='../scrs/weapon_ikons/AK.svg'>
+								Автоматы
+								
+							</h3>
+							<p class="weapons_item">AK-47</p>
+							<p class="weapons_item">M4A4</p>
+							<p class="weapons_item">M4A1-s</p>
+							<p class="weapons_item">SG 553</p>
+							<p class="weapons_item">AUG</p>
+							<p class="weapons_item">Galil AR</p>
+							<p class="weapons_item">Famas</p>
+						</li class="weapons_container">
+
+						<li class="weapons_container">
+							<h3 class=' weapons_title' onclick="sidebarOpen(this)"> 
+								<img class="weapons_ikon" src='../scrs/weapon_ikons/DEAGLE.svg'>
+								Пистолеты
+								
+							</h3>
+								<p class="weapons_item">USP-S</p>
+								<p class="weapons_item">Glock 18</p>
+								<p class="weapons_item">Desert Eagle</p>
+								<p class="weapons_item">P250</p>
+								<p class="weapons_item">Dual Berettas</p>
+								<p class="weapons_item">Tec-9</p>
+								<p class="weapons_item">P2000</p>
+								<p class="weapons_item">CZ75-Auto</p>
+								<p class="weapons_item">R8 Revolver</p>
+						</li>
+
+
+						<li class="weapons_container">
+							<h3 class='weapons_title' onclick="sidebarOpen(this)"> 
+								<img class="weapons_ikon" src='../scrs/weapon_ikons/T-KNIFE.svg'>
+								Ножи
+								
+							</h3>
+								<p class="weapons_item">Butterfly Knife</p>
+								<p class="weapons_item">Bayonet</p>
+								<p class="weapons_item">Bowie Knife</p>
+								<p class="weapons_item">...</p>
+						</li>
+					</ul>
+				</div>
+				<button class='filter_item' onclick='sidebarShow(this)'>
+					<h2 class="filter_title">Перчатки</h2>
+				</button>
+				<button class='filter_item' onclick='sidebarShow(this)'>
+					<h2 class="filter_title">Кейсы</h2>
+				</button>
+				<button class='filter_item' onclick='sidebarShow(this)'>
+					<h2 class="filter_title">Наклейки</h2>
+				</button>
+				<button class='filter_item' onclick='sidebarShow(this)'>
+					<h2 class="filter_title">Нашивки </h2>
+				</button>
+				
+			</div>
+		</div>
+	</aside>
+
+	
+	<section class="section_sell">
+		Продажа предметов
+	</section>
+</main>
+
+</body>
+<script src="JS/script.js"></script>
+</html>

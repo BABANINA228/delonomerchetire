@@ -1,0 +1,320 @@
+@font-face 
+    font-family: 'Montserrat'
+    src: url('../fonts/Montserrat-Black.eot')
+    src: url('../fonts/Montserrat-Black.eot?#iefix') format('embedded-opentype'), url('../fonts/Montserrat-Black.woff2') format('woff2'),url('../fonts/Montserrat-Black.woff') format('woff'),url('../fonts/Montserrat-Black.svg#../fonts/Montserrat-Black') format('svg')
+    font-weight: 900
+    font-style: normal
+    font-display: swap
+
+@font-face 
+    font-family: 'Montserrat'
+    src: url('../fonts/Montserrat-ExtraBold.eot')
+    src: url('../fonts/Montserrat-ExtraBold.eot?#iefix') format('embedded-opentype'),url('../fonts/Montserrat-ExtraBold.woff2') format('woff2'),url('../fonts/Montserrat-ExtraBold.woff') format('woff'),url('../fonts/Montserrat-ExtraBold.svg#../fonts/Montserrat-ExtraBold') format('svg')
+    font-weight: 800
+    font-style: normal
+    font-display: swap
+
+
+@font-face 
+    font-family: 'Montserrat'
+    src: url('../fonts/Montserrat-Bold.eot')
+    src: url('../fonts/Montserrat-Bold.eot?#iefix') format('embedded-opentype'),url('../fonts/Montserrat-Bold.woff2') format('woff2'),url('../fonts/Montserrat-Bold.woff') format('woff'),url('../fonts/Montserrat-Bold.svg#../fonts/Montserrat-Bold') format('svg')
+    font-weight: 700
+    font-style: normal
+    font-display: swap
+
+
+@font-face 
+    font-family: 'Montserrat'
+    src: url('../fonts/Montserrat-Regular.eot')
+    src: url('../fonts/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),url('../fonts/Montserrat-Regular.woff2') format('woff2'),url('../fonts/Montserrat-Regular.woff') format('woff'),url('../fonts/Montserrat-Regular.svg#../fonts/Montserrat-Regular') format('svg')
+    font-weight: 400
+    font-style: normal
+    font-display: swap
+
+
+@font-face 
+    font-family: 'Montserrat'
+    src: url('../fonts/Montserrat-Medium.eot')
+    src: url('../fonts/Montserrat-Medium.eot?#iefix') format('embedded-opentype'),url('../fonts/Montserrat-Medium.woff2') format('woff2'),url('../fonts/Montserrat-Medium.woff') format('woff'),url('../fonts/Montserrat-Medium.svg#../fonts/Montserrat-Medium') format('svg')
+    font-weight: 500
+    font-style: normal
+    font-display: swap
+
+
+@font-face 
+    font-family: 'Montserrat'
+    src: url('../fonts/Montserrat-SemiBold.eot')
+    src: url('../fonts/Montserrat-SemiBold.eot?#iefix') format('embedded-opentype'),url('../fonts/Montserrat-SemiBold.woff2') format('woff2'),url('../fonts/Montserrat-SemiBold.woff') format('woff'),url('../fonts/Montserrat-SemiBold.svg#fonts/Montserrat-SemiBold') format('svg')
+    font-weight: 600
+    font-style: normal
+    font-display: swap
+
+
+h2
+    font-size: 14px
+    margin: 0px
+    padding: 0px
+    text-align: left
+
+h3
+    font-size: 14px
+    margin: 0px
+    padding: 0px
+    text-align: left
+    // display: inline
+
+ul
+    padding: 0px
+    margin: 0px
+
+$deepPurple : #6447A3
+$dark: #272727
+$light: #c5c4c4
+$orange: #FF652F
+$yellow: #FFE400
+$green: #14A76C
+$blue: #66FCF1
+img
+    display: inline
+    z-index: 5
+
+li::marker
+    content: ''
+
+@mixin center
+    display: flex
+    align-items: center
+    justify-content: center
+
+@mixin glow
+    content: ''
+    z-index: 0
+    position: absolute
+    height: 0px
+    border-radius: 50%
+    background: #000
+    display: inline
+.body 
+    font-family: 'Montserrat'
+    background-color: #303136
+    overflow: hidden
+    .header 
+        box-sizing: border-box
+        position: absolute
+        top: 0px
+        left: 0px
+        background-color: $dark
+        width: 100vw
+        height: 60px
+        // border-bottom: 0.5px solid $deepPurple
+        box-shadow: 0 0 10px $blue
+        @include center
+        justify-content: space-between
+
+
+
+        .header_section
+            display: flex
+            gap: 30px
+            position: relative
+            height: 100%
+            margin-left: 25px
+            margin-right: 25px
+            
+            .header_button
+                font-family: 'Montserrat'
+                @include center
+                position: relative
+                background: none
+                outline: none
+                border: none
+                padding: 0px
+                height: 100%
+                text-align: center
+                font-size: 24px
+                font-weight: 500
+                color: white
+                z-index: 1
+                cursor: pointer
+                .header_link
+                    font-weight: 700
+                    @include center
+                    position: relative
+                    color: white
+                    text-decoration: none
+                    font-size: 15px
+
+                    .header_link__active
+                        font-size: 200px
+                        color: white
+                &:hover::before
+                    color: $light
+                    @include glow
+                    box-shadow: 0 0 10px 3px $blue
+                    width: 100%
+                
+            #bucket
+                &:hover::before
+                    width: 0px
+                    box-shadow: 0 0 20px 15px $blue
+            #person
+                font-size: 18px
+                gap: 7px
+
+                #avatar
+                    border-radius: 50%
+                    border: 1px solid $blue
+                    height: 70%
+                    margin-left: 10px
+                    box-shadow: 0 0 10px $blue
+
+                #person_text
+                    @include center
+                    z-index: 1
+                    position: relative
+                    font-size: 16px
+
+                #down-arrow
+                    @include center
+                    width: 15px
+                    height: 11px
+                    box-shadow: none
+                    position: relative
+
+
+            #header_sell:hover::before
+                @include glow
+                box-shadow: 0 0 10px 6px $green
+                width: 100%
+            #header_buy:hover::before
+                @include glow
+                box-shadow: 0 0 10px 6px $green
+                width: 100%
+            
+
+            #header_logo
+                margin-right: 20px
+                font-weight: 900
+                &:hover::before
+                    box-shadow: none
+
+    .main
+        font-family: 'Montserrat'
+        display: grid
+        grid-template-columns: 310px 1fr
+        position: absolute
+        top: 61px
+        width: 100vw
+        left: 0px
+        height: calc( 100vh - 60px )
+
+        .aside
+            color: white
+            border-right: 1px solid $dark
+            z-index: 0
+            &_title
+                width: 309px
+                z-index: 10
+                margin-top: 10px 
+                overflow: hidden
+                border-bottom: 1px solid $dark
+                background-color: #303136
+                height: 40px
+                @include center
+                font-size: 15px
+                font-weight: 700
+
+
+            .filter_container
+                overflow-y: scroll
+                height: 870px
+
+                &::-webkit-scrollbar 
+                    position: relative
+                    width: 8px
+                    top: 60px
+                &::-webkit-scrollbar-track 
+                    background: #303136
+                &::-webkit-scrollbar-thumb 
+                    background-color: $dark
+                    border-radius: 20px
+                
+   
+            .filter_list
+                display: flex
+                flex-direction: column
+                gap: 10px
+                
+
+            .filter_item
+                position: relative
+                display: flex
+                flex-direction: column
+                align-items: left
+                font-family: 'Montserrat'
+                text-align: left
+                font-weight: 600
+                color: white
+                padding: 9px 9px 9px 35px    
+                outline: 0px
+                border: 0px
+                border-radius: 10px
+                background: none
+                font-size: 14px
+                width: 95%
+                cursor: pointer
+            .filter_title
+                position: relative
+                cursor: pointer
+            .filter_item:hover .filter_title::before
+                content: ''
+                z-index: -1
+                position: absolute
+                height: 0px
+                width: 100%
+                top: 0.7em
+                border-radius: 50%
+                background: #000
+                display: inline
+                box-shadow: 0 0 10px 3px $blue
+                
+            .weapons
+                width: 100%
+                &_ikon
+                    max-height: 15px
+                    max-width: 75px
+                    margin-right: 15px
+                    justify-self: center
+                &_container
+                    height: 1.2em
+                    margin-top: 17px 
+                    &.open
+                        height: auto
+                &_item 
+                    color: $light
+                    margin-left: 75px
+                    visibility: hidden
+                    height: 0px
+                    cursor: pointer
+                    font-size: 13px
+                    position: relative
+                &_item.open
+                    visibility: visible
+                    height: auto
+
+
+                
+                &_title
+                    display: grid
+                    grid-template-columns: 0.5fr 1fr
+                    
+                    align-items: center
+                    position: relative
+                    color: $light
+                    margin-left: 25px
+                    cursor: pointer
+                    text-align: left
+                    &:hover
+                        color: white
+                

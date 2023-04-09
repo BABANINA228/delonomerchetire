@@ -1,0 +1,403 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Black.eot");
+  src: url("../fonts/Montserrat-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-Black.woff2") format("woff2"), url("../fonts/Montserrat-Black.woff") format("woff"), url("../fonts/Montserrat-Black.svg#../fonts/Montserrat-Black") format("svg");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-ExtraBold.eot");
+  src: url("../fonts/Montserrat-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-ExtraBold.woff2") format("woff2"), url("../fonts/Montserrat-ExtraBold.woff") format("woff"), url("../fonts/Montserrat-ExtraBold.svg#../fonts/Montserrat-ExtraBold") format("svg");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Bold.eot");
+  src: url("../fonts/Montserrat-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Bold.woff") format("woff"), url("../fonts/Montserrat-Bold.svg#../fonts/Montserrat-Bold") format("svg");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Regular.eot");
+  src: url("../fonts/Montserrat-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat-Regular.svg#../fonts/Montserrat-Regular") format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Medium.eot");
+  src: url("../fonts/Montserrat-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-Medium.woff2") format("woff2"), url("../fonts/Montserrat-Medium.woff") format("woff"), url("../fonts/Montserrat-Medium.svg#../fonts/Montserrat-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-SemiBold.eot");
+  src: url("../fonts/Montserrat-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-SemiBold.woff2") format("woff2"), url("../fonts/Montserrat-SemiBold.woff") format("woff"), url("../fonts/Montserrat-SemiBold.svg#fonts/Montserrat-SemiBold") format("svg");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+h2 {
+  font-size: 14px;
+  margin: 0px;
+  padding: 0px;
+  text-align: left;
+}
+
+h3 {
+  font-size: 14px;
+  margin: 0px;
+  padding: 0px;
+  text-align: left;
+}
+
+ul {
+  padding: 0px;
+  margin: 0px;
+}
+
+img {
+  display: inline;
+  z-index: 5;
+}
+
+li::marker {
+  content: "";
+}
+
+.body {
+  font-family: "Montserrat";
+  background-color: #303136;
+  overflow: hidden;
+}
+.body .header {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: #272727;
+  width: 100vw;
+  height: 60px;
+  -webkit-box-shadow: 0 0 10px #66FCF1;
+          box-shadow: 0 0 10px #66FCF1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.body .header .header_section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  position: relative;
+  height: 100%;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+.body .header .header_section .header_button {
+  font-family: "Montserrat";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  background: none;
+  outline: none;
+  border: none;
+  padding: 0px;
+  height: 100%;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+  color: white;
+  z-index: 1;
+  cursor: pointer;
+}
+.body .header .header_section .header_button .header_link {
+  font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+}
+.body .header .header_section .header_button .header_link .header_link__active {
+  font-size: 200px;
+  color: white;
+}
+.body .header .header_section .header_button:hover::before {
+  color: #c5c4c4;
+  content: "";
+  z-index: 0;
+  position: absolute;
+  height: 0px;
+  border-radius: 50%;
+  background: #000;
+  display: inline;
+  -webkit-box-shadow: 0 0 10px 3px #66FCF1;
+          box-shadow: 0 0 10px 3px #66FCF1;
+  width: 100%;
+}
+.body .header .header_section #bucket:hover::before {
+  width: 0px;
+  -webkit-box-shadow: 0 0 20px 15px #66FCF1;
+          box-shadow: 0 0 20px 15px #66FCF1;
+}
+.body .header .header_section #person {
+  font-size: 18px;
+  gap: 7px;
+}
+.body .header .header_section #person #avatar {
+  border-radius: 50%;
+  border: 1px solid #66FCF1;
+  height: 70%;
+  margin-left: 10px;
+  -webkit-box-shadow: 0 0 10px #66FCF1;
+          box-shadow: 0 0 10px #66FCF1;
+}
+.body .header .header_section #person #person_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 1;
+  position: relative;
+  font-size: 16px;
+}
+.body .header .header_section #person #down-arrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 15px;
+  height: 11px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  position: relative;
+}
+.body .header .header_section #header_sell:hover::before {
+  content: "";
+  z-index: 0;
+  position: absolute;
+  height: 0px;
+  border-radius: 50%;
+  background: #000;
+  display: inline;
+  -webkit-box-shadow: 0 0 10px 6px #14A76C;
+          box-shadow: 0 0 10px 6px #14A76C;
+  width: 100%;
+}
+.body .header .header_section #header_buy:hover::before {
+  content: "";
+  z-index: 0;
+  position: absolute;
+  height: 0px;
+  border-radius: 50%;
+  background: #000;
+  display: inline;
+  -webkit-box-shadow: 0 0 10px 6px #14A76C;
+          box-shadow: 0 0 10px 6px #14A76C;
+  width: 100%;
+}
+.body .header .header_section #header_logo {
+  margin-right: 20px;
+  font-weight: 900;
+}
+.body .header .header_section #header_logo:hover::before {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.body .main {
+  font-family: "Montserrat";
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 310px 1fr;
+  grid-template-columns: 310px 1fr;
+  position: absolute;
+  top: 61px;
+  width: 100vw;
+  left: 0px;
+  height: calc(100vh - 60px);
+}
+.body .main .aside {
+  color: white;
+  border-right: 1px solid #272727;
+  z-index: 0;
+}
+.body .main .aside_title {
+  width: 309px;
+  z-index: 10;
+  margin-top: 10px;
+  overflow: hidden;
+  border-bottom: 1px solid #272727;
+  background-color: #303136;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 15px;
+  font-weight: 700;
+}
+.body .main .aside .filter_container {
+  overflow-y: scroll;
+  height: 870px;
+}
+.body .main .aside .filter_container::-webkit-scrollbar {
+  position: relative;
+  width: 8px;
+  top: 60px;
+}
+.body .main .aside .filter_container::-webkit-scrollbar-track {
+  background: #303136;
+}
+.body .main .aside .filter_container::-webkit-scrollbar-thumb {
+  background-color: #272727;
+  border-radius: 20px;
+}
+.body .main .aside .filter_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+.body .main .aside .filter_item {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  font-family: "Montserrat";
+  text-align: left;
+  font-weight: 600;
+  color: white;
+  padding: 9px 9px 9px 35px;
+  outline: 0px;
+  border: 0px;
+  border-radius: 10px;
+  background: none;
+  font-size: 14px;
+  width: 95%;
+  cursor: pointer;
+}
+.body .main .aside .filter_title {
+  position: relative;
+  cursor: pointer;
+}
+.body .main .aside .filter_item:hover .filter_title::before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  height: 0px;
+  width: 100%;
+  top: 0.7em;
+  border-radius: 50%;
+  background: #000;
+  display: inline;
+  -webkit-box-shadow: 0 0 10px 3px #66FCF1;
+          box-shadow: 0 0 10px 3px #66FCF1;
+}
+.body .main .aside .weapons {
+  width: 100%;
+}
+.body .main .aside .weapons_ikon {
+  max-height: 15px;
+  max-width: 75px;
+  margin-right: 15px;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+.body .main .aside .weapons_container {
+  height: 1.2em;
+  margin-top: 17px;
+}
+.body .main .aside .weapons_container.open {
+  height: auto;
+}
+.body .main .aside .weapons_item {
+  color: #c5c4c4;
+  margin-left: 75px;
+  visibility: hidden;
+  height: 0px;
+  cursor: pointer;
+  font-size: 13px;
+  position: relative;
+}
+.body .main .aside .weapons_item.open {
+  visibility: visible;
+  height: auto;
+}
+.body .main .aside .weapons_title {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 0.5fr 1fr;
+  grid-template-columns: 0.5fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  color: #c5c4c4;
+  margin-left: 25px;
+  cursor: pointer;
+  text-align: left;
+}
+.body .main .aside .weapons_title:hover {
+  color: white;
+}
